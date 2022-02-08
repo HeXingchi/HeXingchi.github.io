@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"xingchihe.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="I will talk about how I built my trilingual blog.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About the process of building the blog (I)">
+<meta property="og:url" content="https://xingchihe.com/en/2022/1/index.html">
+<meta property="og:site_name" content="Xingchi&#39;s Blog">
+<meta property="og:description" content="I will talk about how I built my trilingual blog.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/DOrgao83jvt6Knm.png">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/1Obgps9uIR4CaEL.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/UbxzTwA1pNIyWPD.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/ncb3T5UJ2S7okzB.png">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/PYOSQ5rlTgfGHzi.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/4V8FurvWQY3gGlJ.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/sHRMJqihdBIPAmy.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/lPh36B2Yov5Oujs.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/hjUWepMvQn2Xakf.png">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/qD87QKWMsgbjSwP.png">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/keFPtWA4pjbzgHE.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/9p6UKvLdhmCNsjA.png">
+<meta property="og:image" content="https://vip1.loli.io/2022/02/09/24oOdbenztxc7Du.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/zp6QBXS9onNaMRw.png">
+<meta property="og:image" content="https://vip2.loli.io/2022/02/09/q1Pj5hBRzkeNdFA.png">
+<meta property="article:published_time" content="2022-02-07T23:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-07T23:00:00.000Z">
+<meta property="article:author" content="Xingchi He">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://vip1.loli.io/2022/02/09/DOrgao83jvt6Knm.png">
+
+
+<link rel="canonical" href="https://xingchihe.com/en/2022/1/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://xingchihe.com/en/2022/1/","path":"en/2022/1/","title":"About the process of building the blog (I)"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>About the process of building the blog (I) | Xingchi's Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Xingchi's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Xingchi's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/en" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Xingchi He</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://xingchihe.com/en/2022/1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Xingchi He">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xingchi's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          About the process of building the blog (I)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-08 00:00:00" itemprop="dateCreated datePublished" datetime="2022-02-08T00:00:00+01:00">2022-02-08</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">I will talk about how I built my trilingual blog.</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>In this article I will talk about the whole process of setting up a blog.</p>
+<p>Actually I did not come up with the idea of building a blog at the beginning. I just applied for a domain name in order to get a personal mailbox. And when I got the domain name, I felt that only using it as a mailbox seems to be a little waste. Why not taking advantage of this to get a personal blog?</p>
+<p>The process of tossing and turning is always a lot of fun. After reading a variety of recommendations for building a blog, I finally chose to use Hexo + GitHub Pages, a simple and practical static blog: it’s a bit of trouble, but it’s cheap and practical. I don’t need to build my own server, and I don’t pursue any traffic or revenue from my blog, so it doesn’t matter whatever SEO or any other stuff.</p>
+<p>The establishment of the site is very simple, there are plenty of basic tutorials available online. I just basically followed the process of this <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021979631">article (in Chinese)</a>. The personalization of the site is a matter of opinion. My intention was to create a trilingual blog where I could practice my German at the same time (hopefully…). But it seems that there is not much demand for this and only a few tutorials have been found. And the internationalization of this theme does not seem to reach my goal. It only adds a button to switch the language, and there are always all sorts of errors during my test. I once considered WordPress, but after a brief search, it seems that the internationalization of WordPress also does not have a ready-made solution. It also needs to rely on additional plug-ins. (<a target="_blank" rel="noopener" href="https://wordpress.org/support/article/multilingual-wordpress/">see</a>). So I gave up.</p>
+<p>Then I saw this <a target="_blank" rel="noopener" href="https://tstrs.me/en/1448.html">article</a>, the blogger’s plan is basically in line with my vision. However, there are still some flaws. First, I need to add an extra switch button in each article, which is not elegant enough. Second, I need to add a separate switch language button in the menu, and this button can only switch to another language’s home page, not directly to this article. Third, it does not use the language switcher from the theme. So after some exploration, I improved a little on the basis of the original blogger. It now reaches my basic idea: using the switch button from the theme; clicking it to switch directly to the language of this article rather than return to the home page.</p>
+<p>The basic concept is similar to that of the original blogger, which for me means creating three different site folders that serve as the basic pages for the three languages. But the process after is a little different. Because I want to enable the theme’s own language toggle button, I modified Hexo’s <code>_config.yml</code> to include three languages:</p>
+<div align=center><img src="https://vip1.loli.io/2022/02/09/DOrgao83jvt6Knm.png" alt="Language modification in the English directory" height="200" title="Language modification in the English directory"><img src="https://vip1.loli.io/2022/02/09/1Obgps9uIR4CaEL.png" alt="Language modification in the Chinese directory" height="200" title="Language modification in the Chinese directory"><img src="https://vip2.loli.io/2022/02/09/UbxzTwA1pNIyWPD.png" alt="Language modification in the German directory" height="200" title="Language modification in the German directory"></div>
+
+<p>Unlike the original blogger, here I chose to leave the URL and root directory unchanged, while adding the language option before <code>permalink</code> (which is the same for all three languages):</p>
+<div align=center><img src="https://vip2.loli.io/2022/02/09/ncb3T5UJ2S7okzB.png" alt="Modifications to the permalink in all directories" height="100" title="Modifications to the permalink in all directories"></div>
+
+<p>Note that the contents of the directory under <code>_config.yml</code> of Hexo in the primary language (i.e., the language opened by default by typing the URL, in my case English) should also be modified by adding the prefix for that language:</p>
+<div align=center><img src="https://vip1.loli.io/2022/02/09/PYOSQ5rlTgfGHzi.png" alt="Modifications to the directory in the main language directory" height="200" title="Modifications to the directory in the main language directory"></div>
+
+<p>While remaining unchanged for the other two languages:</p>
+<div align=center><img src="https://vip2.loli.io/2022/02/09/4V8FurvWQY3gGlJ.png" alt="The directory remains unchanged for the sub-language directory" height="200" title="The directory remains unchanged for the sub-language directory"></div>
+
+<p>Next, modify the theme’s <code>_config.yml</code>, which in my case is the Next theme. Add a language prefix to the menu under the theme for each language:</p>
+<div align=center><img src="https://vip2.loli.io/2022/02/09/sHRMJqihdBIPAmy.png" alt="Add language prefixes to the English directory" height="200" title="Add language prefixes to the English directory"><img src="https://vip2.loli.io/2022/02/09/lPh36B2Yov5Oujs.png" alt="Add language prefixes to the Chinese directory" height="200" title="Add language prefixes to the Chinese directory"><img src="https://vip2.loli.io/2022/02/09/hjUWepMvQn2Xakf.png" alt="Add language prefixes to the German directory" height="200" title="Add language prefixes to the German directory"></div>
+
+<p>Then enable the multilingual switch button for all languages:</p>
+<div align=center><img src="https://vip1.loli.io/2022/02/09/qD87QKWMsgbjSwP.png" alt="Enable language switch button in all directories" width="400" title="Enable language switch button in all directories"></div>
+
+<p>This completes the initial setup. If you need to localize the link to the copyright notice as well, add the localization under each language:</p>
+<div align=center><img src="https://vip1.loli.io/2022/02/09/keFPtWA4pjbzgHE.png" alt="Localization of the copyright notice in the English directory" height="200" title="Localization of the copyright notice in the English directory"><img src="https://vip2.loli.io/2022/02/09/9p6UKvLdhmCNsjA.png" alt="Localization of the copyright notice in the Chinese directory" height="200" title="Localization of the copyright notice in the Chinese directory"><img src="https://vip1.loli.io/2022/02/09/24oOdbenztxc7Du.png" alt="Localization of the copyright notice in the German directory" height="200" title="Localization of the copyright notice in the German directory"></div>
+
+<p>Finally, when deploying, note that you should first do <code>hexo clean</code> and <code>hexo g</code> in the two sub-language directories, and then do <code>hexo clean</code> and <code>hexo g</code> in the main language directory. Then, in the <code>public</code> folder generated in the main language directory, move the corresponding contents (for example, the directories <code>2021</code> and <code>2022</code> related to my articles here, and <code>about</code> and <code>archives</code> and so on) to the main language folder (for example, if for me it’s English, move it to the <code>en</code> folder in <code>public</code>). For other languages, such as German, create a new <code>de</code> folder under the <code>public</code> folder in the main language, and copy the <code>about</code>, <code>archives</code>, <code>index.html</code> from the <code>public</code> folder just created in the German folder, as well as the article-related content in the <code>de</code> folder under German <code>public</code> folder (<code>2021</code>, <code> 2022</code> and so on) to the <code>de</code> folder under the <code>public</code> folder of the main language. The Chinese language is similar. Finally, under the <code>public</code> folder in the main language, it looks like this:</p>
+<div align=center><img src="https://vip2.loli.io/2022/02/09/zp6QBXS9onNaMRw.png" alt="The public folder in the main language directory" height="200" title="The public folder in the main language directory"></div>
+
+<p>The folders under each language will probably look like this:</p>
+<div align=center><img src="https://vip2.loli.io/2022/02/09/q1Pj5hBRzkeNdFA.png" alt="Folders for each language" height="100" title="Folders for each language"></div>
+
+<p>Finally <code>hexo d</code> in the main language directory is all that is needed.</p>
+<p>Well, here is the first (second?) article. I’ll leave other things to the next one. I hope I will coninue to write :)</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Xingchi He
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://xingchihe.com/en/2022/1/" title="About the process of building the blog (I)">https://xingchihe.com/en/2022/1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2021/1/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="en" data-href="/2022/1/" selected="">
+          English
+        </option>
+      
+        <option value="zh-CN" data-href="/zh-CN/2022/1/" selected="">
+          简体中文
+        </option>
+      
+        <option value="de" data-href="/de/2022/1/" selected="">
+          Deutsch
+        </option>
+      
+    </select>
+  </div>
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xingchi He</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
